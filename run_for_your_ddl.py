@@ -223,8 +223,8 @@ def main():
             for _ in pygame.sprite.spritecollide(player, g_time, True):
                 score += 1
 
-            # Reaching 88 time units → victory message (game continues)
-            if score >= 88 and not victory_shown:
+            # Reaching 66 time units → victory message (game continues)
+            if score >= 66 and not victory_shown:
                 victory_shown = True
                 victory_time = pygame.time.get_ticks()
 
